@@ -1,0 +1,131 @@
+:root {
+  --azul: #56D0E9;
+  --amarelo: #F8C48B;
+  --lilas: #A79BC1;
+  --roxo: #5E67A5;
+  --azul-medio: #4B93BB;
+  --cinza-claro: #EDEDED;
+  --cinza-escuro: #4F4F4F;
+}
+
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cinza-claro);
+  font-family: 'Roboto', sans-serif;
+  color: var(--cinza-escuro);
+  padding: 24px;
+}
+
+/* MENU SUPERIOR */
+.menu-superior {
+  background-color: var(--roxo);
+  color: var(--cinza-claro);
+  padding: 16px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+/* FORMULÁRIO */
+.form-container {
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  color: var(--roxo);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: var(--cinza-escuro);
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--lilas);
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--amarelo);
+  box-shadow: 0 0 4px var(--amarelo);
+}
+
+/* INSTRUÇÕES DA SENHA */
+.instrucoes-senha {
+  background-color: var(--lilas);
+  color: var(--cinza-claro);
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+/* FIELDSET */
+fieldset {
+  border: 1px solid var(--lilas);
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+legend {
+  color: var(--roxo);
+  font-weight: bold;
+}
+
+label input[type="radio"] {
+  margin-right: 6px;
+}
+
+/* BOTÃO */
+button {
+  background-color: var(--azul);
+  color: var(--cinza-claro);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  background-color: var(--azul-medio);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+}
