@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dobo Serviços de TI - Cadastro</title>
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="../login/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <header class="menu-superior">
+    <a href="../index.html" class="logo-link">
+      <img src="../assets/dobo_logo_sem_nome.png" alt="Logo Dobo Serviços de TI" class="logo">
+    </a>
+  
+    <nav class="menu-links">
+      <a href="../login/login.html" class="link-header">Login</a>
+      <a href="cadastro.html" class="link-header">Cadastrar</a>
+      <a href="carrinho.html" class="link-header">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    </nav>
+  </header>
+  
+
+  <main>
+    <section class="form-container">
+      <h2>Login de Clientes</h2>
+      <form>
+        <label for="email">E-mail (login)</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+		
+				<div class="acoes-login">
+					<button type="button" class="btn-link btn-limpar">Limpar campos</button>
+					<button type="button" class="btn-link btn-recuperar">Recuperar senha</button>
+				</div>
+				
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
