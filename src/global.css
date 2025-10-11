@@ -87,6 +87,7 @@ main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 100%;
   max-width: 500px;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -260,7 +261,6 @@ button:hover {
   background-color: var(--roxo);
   color: var(--cinza-claro);
   padding: 32px 16px;
-  margin-top: 40px;
 }
 
 .footer-container {
