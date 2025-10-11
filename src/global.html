@@ -58,13 +58,22 @@
         <label for="telefone">Telefone celular / WhatsApp</label>
         <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
 
-        <fieldset>
+        <fieldset class="estado-civil">
           <legend>Estado civil</legend>
-          <label><input type="radio" name="estado-civil" value="solteiro" checked> Solteiro(a)</label>
-          <label><input type="radio" name="estado-civil" value="casado"> Casado(a)</label>
-          <label><input type="radio" name="estado-civil" value="divorciado"> Divorciado(a)</label>
-          <label><input type="radio" name="estado-civil" value="viuvo"> Viúvo(a)</label>
+          <label class="opcao-estado">
+            <input type="radio" name="estado-civil" value="solteiro" checked> Solteiro(a)
+          </label>
+          <label class="opcao-estado">
+            <input type="radio" name="estado-civil" value="casado"> Casado(a)
+          </label>
+          <label class="opcao-estado">
+            <input type="radio" name="estado-civil" value="divorciado"> Divorciado(a)
+          </label>
+          <label class="opcao-estado">
+            <input type="radio" name="estado-civil" value="viuvo"> Viúvo(a)
+          </label>
         </fieldset>
+        
 
         <label for="escolaridade">Escolaridade</label>
         <select id="escolaridade" name="escolaridade">
@@ -80,4 +89,40 @@
     </section>
   </main>
 </body>
+<footer class="footer">
+	<div class="footer-container">
+		<div class="footer-bloco">
+			<h3>Contatos</h3>
+			<ul>
+				<li><i class="fa-solid fa-phone"></i> (81) 3333-4455</li>
+        <li><i class="fa-brands fa-whatsapp"></i> (81) 99999-1122</li>
+        <li><i class="fa-solid fa-envelope"></i> 
+          <a href="mailto:contato@dobo.com.br">contato@dobo.com.br</a>
+        </li>
+			</ul>
+		</div>
+
+		<div class="footer-bloco">
+			<h3>Endereço</h3>
+			<p class="endereco">
+        <i class="fa-solid fa-location-dot"></i> Rua dos Pets Trabalhadores, 42<br>
+        Recife - PE, 50000-000<br>
+        Brasil
+      </p>
+		</div>
+
+		<div class="footer-bloco">
+			<h3>Formas de Pagamento</h3>
+      <ul>
+        <li><i class="fa-brands fa-cc-visa"></i> Visa Electron<li>
+        <li><i class="fa-brands fa-cc-mastercard"></i> Mastercard</li>
+        <li><i class="fa-brands fa-cc-apple-pay"></i> Apple Pay</li>
+        <li><i class="fa-brands fa-pix"></i> Pix</li>
+    </ul>		
+    </div>
+	</div>
+  <div class="footer-copyrights">
+    <p>© 2025 Dobo Serviços de TI. Todos os direitos reservados. 🐾</p>
+  </div>
+</footer>
 </html>

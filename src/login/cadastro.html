@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dobo Serviços de TI - Cadastro</title>
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="../login/cadastro.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <header class="menu-superior">
+    <a href="../index.html" class="logo-link">
+      <img src="../assets/dobo_logo_sem_nome.png" alt="Logo Dobo Serviços de TI" class="logo">
+    </a>
+  
+    <nav class="menu-links">
+      <a href="../login/login.html" class="link-header">Login</a>
+      <a href="cadastro.html" class="link-header">Cadastrar</a>
+      <a href="carrinho.html" class="link-header">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="form-container">
+      <h2>Cadastro de Clientes</h2>
+      <form>
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">E-mail (login)</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+        <div class="instrucoes-senha">
+          <p>
+            Sua senha deve ter pelo menos <strong>8 caracteres</strong>, incluir <strong>1 letra maiúscula</strong>, 
+            <strong>1 número</strong> e <strong>1 caractere especial</strong> permitido 
+            (<code>@ # $ % & *</code>).  
+            Não são permitidos espaços nem os caracteres <code>< > / \</code>.
+          </p>
+        </div>
+
+        <div class="linha-campo-duplo">
+          <div class="campo">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+          </div>
+          <div class="campo">
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" id="nascimento" name="nascimento" required>
+        </div>
+        </div>
+        
+                <fieldset class="estado-civil">
+                  <legend>Estado civil</legend>
+                  <label class="opcao-estado">
+                    <input type="radio" name="estado-civil" value="solteiro" checked> Solteiro(a)
+                  </label>
+                  <label class="opcao-estado">
+                    <input type="radio" name="estado-civil" value="casado"> Casado(a)
+                  </label>
+                  <label class="opcao-estado">
+                    <input type="radio" name="estado-civil" value="divorciado"> Divorciado(a)
+                  </label>
+                  <label class="opcao-estado">
+                    <input type="radio" name="estado-civil" value="viuvo"> Viúvo(a)
+                  </label>
+                </fieldset>
+
+        <div class="linha-campo-duplo">
+          <div class="campo">
+            <label for="telefone">Telefone celular / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+          </div>
+          <div class="campo">
+            <label for="escolaridade">Escolaridade</label>
+            <select id="escolaridade" name="escolaridade">
+              <option>1º grau incompleto</option>
+              <option>1º grau completo</option>
+              <option selected>2º grau completo</option>
+              <option>Nível superior</option>
+              <option>Pós-graduado</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="acoes-form">
+          <button type="button" class="btn-link btn-limpar">Limpar campos</button>
+					<button type="button" class="btn-link btn-home">Voltar para home</button>
+
+        </div>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+		
+				
+    </section>
+  </main>
+</body>
+<footer class="footer">
+	<div class="footer-container">
+		<div class="footer-bloco">
+			<h3>Contatos</h3>
+			<ul>
+				<li><i class="fa-solid fa-phone"></i> (81) 3333-4455</li>
+        <li><i class="fa-brands fa-whatsapp"></i> (81) 99999-1122</li>
+        <li><i class="fa-solid fa-envelope"></i> 
+          <a href="mailto:contato@dobo.com.br">contato@dobo.com.br</a>
+        </li>
+			</ul>
+		</div>
+
+		<div class="footer-bloco">
+			<h3>Endereço</h3>
+			<p class="endereco">
+        <i class="fa-solid fa-location-dot"></i> Rua dos Pets Trabalhadores, 42<br>
+        Recife - PE, 50000-000<br>
+        Brasil
+      </p>
+		</div>
+
+		<div class="footer-bloco">
+			<h3>Formas de Pagamento</h3>
+      <ul>
+        <li><i class="fa-brands fa-cc-visa"></i> Visa Electron<li>
+        <li><i class="fa-brands fa-cc-mastercard"></i> Mastercard</li>
+        <li><i class="fa-brands fa-cc-apple-pay"></i> Apple Pay</li>
+        <li><i class="fa-brands fa-pix"></i> Pix</li>
+    </ul>		
+    </div>
+	</div>
+  <div class="footer-copyrights">
+    <p>© 2025 Dobo Serviços de TI. Todos os direitos reservados. 🐾</p>
+  </div>
+</footer>
+</html>

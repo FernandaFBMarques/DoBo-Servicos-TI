@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dobo Serviços de TI - Login</title>
+  <title>Dobo Serviços de TI - Recuperar Senha</title>
   <link rel="stylesheet" href="../global.css">
-  <link rel="stylesheet" href="../login/login.css">
+  <link rel="stylesheet" href="../login/recuperar-senha.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
@@ -26,17 +26,30 @@
   
   <main>
     <section class="form-container">
-      <h2>Login de Clientes</h2>
+      <h2>Troca de senha de clientess</h2>
       <form>
         <label for="email">E-mail (login)</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail cadastrado" required>
 
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-		
-				<div class="acoes-form">
+        <label for="nova-senha">Nova senha</label>
+        <input type="password" id="nova-senha" name="nova-senha" placeholder="Digite sua nova senha" required>
+
+				
+				<label for="confirma-senha">Confirme sua nova senha</label>
+        <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Confirme sua nova senha" required>
+        
+        <div class="instrucoes-senha">
+          <p>
+            Sua senha deve ter pelo menos <strong>8 caracteres</strong>, incluir <strong>1 letra maiúscula</strong>, 
+            <strong>1 número</strong> e <strong>1 caractere especial</strong> permitido 
+            (<code>@ # $ % & *</code>).  
+            Não são permitidos espaços nem os caracteres <code>< > / \</code>.
+          </p>
+        </div>
+
+        <div class="acoes-login">
 					<button type="button" class="btn-link btn-limpar">Limpar campos</button>
-					<button type="button" class="btn-link btn-recuperar">Recuperar senha</button>
+					<button type="button" class="btn-link btn-login">Realizar login</button>
 				</div>
 				
         <button type="submit">Login</button>
@@ -80,4 +93,5 @@
     <p>© 2025 Dobo Serviços de TI. Todos os direitos reservados. 🐾</p>
   </div>
 </footer>
+
 </html>

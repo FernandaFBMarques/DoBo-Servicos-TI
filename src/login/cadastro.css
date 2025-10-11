@@ -1,0 +1,4 @@
+.form-container {
+    max-width: 570px; /* ou 700px se quiser ainda mais largo */
+    padding: 40px; /* um pouco mais de espaço interno */
+  }

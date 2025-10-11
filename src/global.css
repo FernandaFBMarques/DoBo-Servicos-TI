@@ -100,7 +100,7 @@ label {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
-  color: var(--cinza-escuro);
+  color: var(--roxo);
 }
 
 input, select {
@@ -128,12 +128,62 @@ input:focus, select:focus {
   font-size: 14px;
 }
 
-/* FIELDSET */
-fieldset {
+/* LINHA COM DOIS CAMPOS NO FORM */
+.linha-campo-duplo {
+  display: flex;
+  gap: 16px; 
+  width: 100%;
+}
+
+.linha-campo-duplo .campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* FIELDSET  - OPÇÕES*/
+
+.estado-civil {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   border: 1px solid var(--lilas);
-  padding: 12px;
   border-radius: 6px;
+  padding: 12px;
+  justify-content: space-around;
   margin-bottom: 16px;
+}
+
+.opcao-estado {
+  border: 1px solid var(--lilas);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center; 
+  gap: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--cinza-escuro);
+}
+
+/* alinhar o radio */
+.opcao-estado input[type="radio"] {
+  accent-color: var(--roxo);
+  margin: 0;
+  vertical-align: middle;
+  position: relative;
+  top: -1px; /* ajusta finamente a bolinha */
+}
+
+.opcao-estado:hover {
+  background-color: var(--amarelo);
+}
+
+.opcao-estado input[type="radio"] {
+  accent-color: var(--roxo); /* cor da bolinha */
 }
 
 legend {
@@ -164,9 +214,112 @@ button:hover {
   background-color: var(--azul-medio);
 }
 
+/*BOTÕES LINK NO FORMS*/
+.acoes-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Botões com aparência de link em recuperar senha e limpar*/
+.btn-link {
+  background: none;
+  border: none;
+  color: var(--roxo);
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.btn-link:hover {
+  color: var(--amarelo);
+  text-decoration: underline;
+}
+
+.btn-link,
+.btn-link:hover {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.btn-limpar {
+  text-align: left;
+}
+
+.btn-recuperar,  .btn-login , .btn-home{
+  text-align: right;
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: var(--roxo);
+  color: var(--cinza-claro);
+  padding: 32px 16px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-bloco {
+  font-size: 14px;
+}
+
+.footer-bloco h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 12px;
+  color: var(--amarelo);
+}
+
+.footer-bloco ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-bloco ul li{
+  margin-bottom: 6px;
+  margin-right: 4px;
+}
+
+.footer-bloco a {
+  color: var(--cinza-claro);
+  text-decoration: none;
+}
+
+.footer-bloco a:hover {
+  text-decoration: underline;
+}
+
+/* COPYRIGHT */
+.footer-copyrights {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 12px;
+  color: var(--cinza-claro);
+  letter-spacing: 0.3px;
+}
+
 /* RESPONSIVIDADE */
 @media (max-width: 600px) {
   .form-container {
     padding: 20px;
   }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
