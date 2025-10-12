@@ -6,6 +6,7 @@
   --azul-medio: #4B93BB;
   --cinza-claro: #EDEDED;
   --cinza-escuro: #4F4F4F;
+  --vermelho: #750000;
 }
 
 /* RESET BÁSICO */
@@ -109,7 +110,6 @@ input, select {
   padding: 10px;
   border: 1px solid var(--lilas);
   border-radius: 6px;
-  margin-bottom: 16px;
   font-size: 14px;
 }
 
@@ -254,6 +254,28 @@ button:hover {
 .btn-recuperar,  .btn-login , .btn-home{
   text-align: right;
 }
+
+/*MENSAGEM DE ERROS DOS INPUTS*/
+.campo{
+  margin-bottom: 16px;
+}
+
+.campo .erro {
+  font-size: 13px;
+  color: var(--vermelho);
+  display: block;
+  margin-top: 10px;
+}
+
+input.tocado:invalid {
+  border-color: var(--vermelho);
+}
+
+
+input.tocado:valid {
+  border-color: var(--azul);
+}
+
 
 
 /* FOOTER */

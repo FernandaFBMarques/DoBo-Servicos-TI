@@ -27,12 +27,17 @@
   <main>
     <section class="form-container">
       <h2>Login de Clientes</h2>
-      <form>
-        <label for="email">E-mail (login)</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+      <form id="form-login" novalidate>
+        <div class="campo">
+          <label for="email">E-mail (login)</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+          <small class="erro"></small>
+        </div>
+        <div class="campo"> 
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+          <small class="erro"></small> 
+        </div>
 		
 				<div class="acoes-form">
 					<button type="button" class="btn-link btn-limpar">Limpar campos</button>
@@ -43,6 +48,7 @@
       </form>
     </section>
   </main>
+  <script src="../login/login.js"></script>
 </body>
 <footer class="footer">
 	<div class="footer-container">
