@@ -1,31 +1,16 @@
+import {
+  mostrarErro,
+  limparErro,
+  validarEmail,
+  validarSenha,
+} from "../utils/utils.js";
+
 const form = document.getElementById("form-login");
 const emailInput = document.getElementById("email");
 const senhaInput = document.getElementById("senha")
 const inputs = document.querySelectorAll("input");
 const btnLimpar = document.querySelector(".btn-limpar");
 const btnRecuperar = document.querySelector(".btn-recuperar");
-
-function mostrarErro(input, mensagem) {
-  const campo = input.parentElement;
-  const small = campo.querySelector(".erro");
-  small.textContent = mensagem;
-  small.style.color = "var(--vermelho)";
-}
-
-function limparErro(input) {
-  const campo = input.parentElement;
-  const small = campo.querySelector(".erro");
-  small.textContent = "";
-}
-
-function validarEmail(email) {
-  const padraoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return padraoEmail.test(email);
-}
-function validarSenha(senha){
-	const padraoSenha = /^(?=.*[A-Z])(?=.*\d)(?=.*[@#$%&*!?/\\|_\-+=.])[A-Za-z\d@#$%&*!?/\\|_\-+=.]{6,}$/;
-	return padraoSenha.test(senha)
-}
 
 form.addEventListener("submit", (e) => {
   e.preventDefault(); 
@@ -70,12 +55,12 @@ form.addEventListener("submit", (e) => {
 });
 
 btnLimpar.addEventListener("click", () => {
-	form.reset(); 
-	inputs.forEach((input) => {
-		limparErro(input);
-		input.classList.remove("tocado");
-	});
-		emailInput.focus();
+  form.reset();
+  inputs.forEach((input) => {
+    limparErro(input);
+    input.classList.remove("tocado");
+  });
+  emailInput.focus(); // foco volta pro campo de e-mail
 });
 
 btnRecuperar.addEventListener("click", () => {

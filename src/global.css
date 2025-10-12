@@ -333,6 +333,11 @@ input.tocado:valid {
   letter-spacing: 0.3px;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* RESPONSIVIDADE */
 @media (max-width: 600px) {
   .form-container {
