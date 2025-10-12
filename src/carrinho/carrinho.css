@@ -1,0 +1,140 @@
+.carrinho-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 40px 20px;
+    gap: 60px;
+  }
+  
+  /* USUÁRIO LOGADO */
+  .usuario-info {
+    text-align: center;
+    color: var(--roxo);
+  }
+  
+  .usuario-info h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 6px;
+  }
+  
+  .usuario-info p {
+    color: var(--cinza-escuro);
+  }
+  
+  /* TABELA DE SOLICITAÇÕES */
+  .tabela-solicitacoes {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .tabela-solicitacoes h2 {
+    color: var(--roxo);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .tabela-solicitacoes table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabela-solicitacoes th {
+    background-color: var(--roxo);
+    color: white;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  
+  .tabela-solicitacoes td {
+    border-bottom: 1px solid var(--lilas);
+    padding: 10px;
+    text-align: center;
+    color: var(--cinza-escuro);
+  }
+  
+  .tabela-solicitacoes tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .btn-excluir {
+    background-color: var(--amarelo);
+    color: var(--cinza-escuro);
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-excluir:hover {
+    background-color: var(--lilas);
+    color: white;
+  }
+  
+  /* FORMULÁRIO DE NOVA SOLICITAÇÃO */
+  .nova-solicitacao {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .nova-solicitacao form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nova-solicitacao input[readonly] {
+    background-color: var(--cinza-claro);
+    cursor: not-allowed;
+    color: var(--roxo);
+    font-weight: 600;
+  }
+  
+  .nova-solicitacao select {
+    background-color: white;
+  }
+  
+  .nova-solicitacao .campo label {
+    color: var(--roxo);
+    font-weight: 600;
+  }
+  
+  
+  /* RESPONSIVIDADE */
+  @media (max-width: 800px) {
+    .tabela-solicitacoes {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .tabela-solicitacoes table,
+    .tabela-solicitacoes th,
+    .tabela-solicitacoes td {
+      font-size: 13px;
+    }
+  
+    .nova-solicitacao {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .linha-campo-duplo {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .btn-incluir {
+      width: 100%;
+    }
+  }
+  

@@ -76,11 +76,6 @@ main.home-main {
   
 }
 
-.historia h2 {
-  color: var(--roxo);
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 40px;
-}
 
 .historia-content {
   display: flex;
@@ -131,12 +126,6 @@ main.home-main {
   text-align: center;
 }
 
-.galeria h2 {
-  color: var(--roxo);
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 24px;
-}
-
 .fotos {
   display: flex;
   justify-content: center;
@@ -163,11 +152,6 @@ main.home-main {
   background-color: var(--lilas);
   color: white;
   text-align: center;
-}
-
-.servicos h2 {
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 30px;
 }
 
 .cards-servicos {
@@ -212,12 +196,6 @@ main.home-main {
   background-color: white;
   text-align: center;
   padding: 80px 40px;
-}
-
-.fundadores h2 {
-  color: var(--roxo);
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 50px;
 }
 
 .fundadores-container {

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dobo Serviços de TI - Carrinho</title>
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="../carrinho/carrinho.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <header class="menu-superior">
+    <a href="../home/home.html" class="logo-link">
+      <img src="../assets/dobo_logo_sem_nome.png" alt="Logo Dobo Serviços de TI" class="logo">
+    </a>
+  
+    <nav class="menu-links">
+      <a href="../login/login.html" class="link-header">Login</a>
+      <a href="../login/cadastro.html" class="link-header">Cadastrar</a>
+      <a href="../carrinho/" class="link-header">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    </nav>
+  </header>
+
+  <main class="carrinho-main">
+
+	<section class="usuario-info">
+		<h2>Bem-vindo(a), <span class="usuario-nome">Doce de Leite</span> 🐾</h2>
+		<p>Login: <strong>doce@dobo.com.br</strong></p>
+	</section>
+
+	<section class="tabela-solicitacoes">
+		<h2>Solicitações Realizadas</h2>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Data do Pedido</th>
+					<th>Nº Solicitação</th>
+					<th>Serviço de TI</th>
+					<th>Status</th>
+					<th>Preço</th>
+					<th>Data Prevista</th>
+					<th>Ações</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>01/10/2025</td>
+					<td>001</td>
+					<td>Backup na Nuvem Roxa</td>
+					<td>Concluído</td>
+					<td>R$ 250,00</td>
+					<td>05/10/2025</td>
+					<td><button class="btn-excluir"><i class="fa-solid fa-trash"></i></button></td>
+				</tr>
+				<tr>
+					<td>04/10/2025</td>
+					<td>002</td>
+					<td>Segurança de Rede Roxa</td>
+					<td>Em andamento</td>
+					<td>R$ 400,00</td>
+					<td>10/10/2025</td>
+					<td><button class="btn-excluir"><i class="fa-solid fa-trash"></i></button></td>
+				</tr>
+				<tr>
+					<td>10/10/2025</td>
+					<td>003</td>
+					<td>Data Analytics Roxa </td>
+					<td>Em elaboração</td>
+					<td>R$ 600,00</td>
+					<td>17/10/2025</td>
+					<td><button class="btn-excluir"><i class="fa-solid fa-trash"></i></button></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section class="nova-solicitacao">
+			<h2>Nova Solicitação de Serviço</h2>
+		
+			<form>
+				<div class="linha-campo-duplo">
+					<div class="campo">
+						<label for="servico">Serviço de TI</label>
+						<select id="servico" name="servico" required>
+							<option value="">Selecione um serviço</option>
+							<option value="backup">Backup na Nuvem</option>
+							<option value="seguranca">Segurança de Rede</option>
+							<option value="suporte">Suporte Técnico</option>
+							<option value="data">Data Analytics</option>
+							<option value="monitoramento">Monitoramento de Sistemas</option>
+						</select>
+					</div>
+		
+					<div class="campo">
+						<label for="preco">Preço</label>
+						<input type="text" id="preco" name="preco" readonly value="R$ 0,00">
+					</div>
+				</div>
+		
+				<div class="linha-campo-duplo">
+					<div class="campo">
+						<label for="prazo">Prazo de Atendimento (dias)</label>
+						<input type="text" id="prazo" name="prazo" readonly value="--">
+					</div>
+		
+					<div class="campo">
+						<label for="data-prevista">Data Prevista de Atendimento</label>
+						<input type="text" id="data-prevista" name="data-prevista" readonly value="--/--/----">
+					</div>
+				</div>
+		
+				<div class="campo">
+					<label for="status">Status</label>
+					<input type="text" id="status" name="status" readonly value="Em elaboração">
+				</div>
+		
+				<button type="button" class="button">Incluir Solicitação</button>
+			</form>
+		</section>
+
+</main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-bloco">
+        <h3>Contatos</h3>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i> (81) 3333-4455</li>
+          <li><i class="fa-brands fa-whatsapp"></i> (81) 99999-1122</li>
+          <li><i class="fa-solid fa-envelope"></i> 
+            <a href="mailto:contato@dobo.com.br">contato@dobo.com.br</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bloco">
+        <h3>Endereço</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Rua dos Pets Trabalhadores, 42 - Recife/PE</p>
+      </div>
+
+      <div class="footer-bloco">
+        <h3>Formas de Pagamento</h3>
+        <ul>
+          <li><i class="fa-brands fa-cc-visa"></i> Visa</li>
+          <li><i class="fa-brands fa-cc-mastercard"></i> Mastercard</li>
+          <li><i class="fa-brands fa-cc-apple-pay"></i> Apple Pay</li>
+          <li><i class="fa-brands fa-pix"></i> Pix</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyrights">
+      <p>© 2025 Dobo Serviços de TI. Todos os direitos reservados. 🐾</p>
+    </div>
+  </footer>
+
+  <script src="../carrinho/carrinho.js"></script>
+
+</body>
+</html>
