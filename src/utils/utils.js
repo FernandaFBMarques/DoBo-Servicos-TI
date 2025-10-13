@@ -54,7 +54,7 @@ export function configurarMenu() {
         const confirmar = confirm("Deseja sair da sua conta?");
         if (confirmar) {
           localStorage.removeItem("usuarioLogado");
-          window.location.reload();
+          window.location.href = "../home/home.html";
         }
       });
   
