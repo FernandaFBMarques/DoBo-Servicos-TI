@@ -1,3 +1,5 @@
+import { configurarMenu } from "../utils/utils.js";
+
 const solicitacoesBackend = [
     {
       dataPedido: "01/10/2025",
@@ -133,7 +135,14 @@ const solicitacoesBackend = [
         renderizarTabela();
       }
     }
+  })  
+
+  document.addEventListener("DOMContentLoaded", () => {
+    configurarMenu();
   });
+
+  
+
   
   renderizarTabela();
 

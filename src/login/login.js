@@ -46,8 +46,10 @@ form.addEventListener("submit", (e) => {
   if (valido) {
 		limparErro(senhaInput)
 		limparErro(emailInput)
+		localStorage.setItem("usuarioLogado", "true");
     setTimeout(() => {
 			alert("Login realizado com sucesso! 🐾");
+
 			window.location.href = "../carrinho/carrinho.html";
 		}, 50);
   }

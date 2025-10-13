@@ -15,70 +15,67 @@
       <img src="../assets/dobo_logo_sem_nome.png" alt="Logo Dobo Serviços de TI" class="logo">
     </a>
   
-    <nav class="menu-links">
+    <nav class="menu-links" id="menu-links">
       <a href="../login/login.html" class="link-header">Login</a>
       <a href="../login/cadastro.html" class="link-header">Cadastrar</a>
-      <a href="../carrinho/" class="link-header">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </a>
     </nav>
   </header>
 
   <main class="carrinho-main">
 
-	<section class="usuario-info">
-		<h2>Bem-vindo(a), <span class="usuario-nome">Doce de Leite</span> 🐾</h2>
-		<p>Login: <strong>doce@dobo.com.br</strong></p>
-	</section>
+		<section class="usuario-info">
+			<p class="usuario-nome">Bem-vindo(a), <strong>Doce de Leite 🐾</strong></p>
+			<p class="usuario-login">Login: <span>doce@dobo.com.br</span></p>
+		</section>
 
-	<section class="tabela-solicitacoes">
-		<h2>Solicitações Realizadas</h2>
+		<section class="tabela-solicitacoes">
+			<h2>Solicitações Realizadas</h2>
 
-		<table>
-			<thead>
-				<tr>
-					<th>Data do Pedido</th>
-					<th>Nº Solicitação</th>
-					<th>Serviço de TI</th>
-					<th>Status</th>
-					<th>Preço</th>
-					<th>Data Prevista</th>
-					<th>Ações</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>01/10/2025</td>
-					<td>001</td>
-					<td>Backup na Nuvem Roxa</td>
-					<td>Concluído</td>
-					<td>R$ 250,00</td>
-					<td>05/10/2025</td>
-					<td><button class="btn-excluir"><i class="fa-solid fa-trash"></i></button></td>
-				</tr>
-				<tr>
-					<td>04/10/2025</td>
-					<td>002</td>
-					<td>Segurança de Rede Roxa</td>
-					<td>Em andamento</td>
-					<td>R$ 400,00</td>
-					<td>10/10/2025</td>
-					<td><button class="btn-excluir"><i class="fa-solid fa-trash"></i></button></td>
-				</tr>
-				<tr>
-					<td>10/10/2025</td>
-					<td>003</td>
-					<td>Data Analytics Roxa </td>
-					<td>Em elaboração</td>
-					<td>R$ 600,00</td>
-					<td>17/10/2025</td>
-					<td><button class="btn-excluir"><i class="fa-solid fa-trash"></i></button></td>
-				</tr>
-			</tbody>
-		</table>
-	</section>
+			<table>
+				<thead>
+					<tr>
+						<th>Data do Pedido</th>
+						<th>Nº Solicitação</th>
+						<th>Serviço de TI</th>
+						<th>Status</th>
+						<th>Preço</th>
+						<th>Data Prevista</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>01/10/2025</td>
+						<td>001</td>
+						<td>Backup na Nuvem Roxa</td>
+						<td>Concluído</td>
+						<td>R$ 250,00</td>
+						<td>05/10/2025</td>
+						<td><button class="btn-excluir"><i class="fa-solid fa-trash"></i></button></td>
+					</tr>
+					<tr>
+						<td>04/10/2025</td>
+						<td>002</td>
+						<td>Segurança de Rede Roxa</td>
+						<td>Em andamento</td>
+						<td>R$ 400,00</td>
+						<td>10/10/2025</td>
+						<td><button class="btn-excluir"><i class="fa-solid fa-trash"></i></button></td>
+					</tr>
+					<tr>
+						<td>10/10/2025</td>
+						<td>003</td>
+						<td>Data Analytics Roxa </td>
+						<td>Em elaboração</td>
+						<td>R$ 600,00</td>
+						<td>17/10/2025</td>
+						<td><button class="btn-excluir"><i class="fa-solid fa-trash"></i></button></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 
-	<section class="nova-solicitacao">
+		<section class="nova-solicitacao">
 			<h2>Nova Solicitação de Serviço</h2>
 		
 			<form>
@@ -120,10 +117,12 @@
 		
 				<button type="button" class="button">Incluir Solicitação</button>
 			</form>
-		</section>
+	</section>
 
-</main>
+	</main>
+<script type="module" src="../carrinho/carrinho.js"></script>
 
+</body>
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-bloco">
@@ -159,5 +158,5 @@
 
   <script src="../carrinho/carrinho.js"></script>
 
-</body>
+
 </html>
