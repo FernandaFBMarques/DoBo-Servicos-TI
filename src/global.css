@@ -36,6 +36,13 @@ body {
   position: relative;
 }
 
+.menu-links > .link-header:nth-child(odd) {
+  color: var(--cinza-claro);
+}
+.menu-links > .link-header:nth-child(even) {
+  color: var(--amarelo);
+}
+
 .logo {
   height: 50px;
   width: auto;
@@ -91,11 +98,25 @@ main {
   margin-bottom: 40px;
 }
 
+.form-container h2::before {
+  content: "🐾 ";
+  color: var(--amarelo);
+}
+.form-container h2::after {
+  content: " 🐶";
+  color: var(--amarelo);
+}
+
 h2 {
   color: var(--roxo);
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 34px;
   text-align: center;
+}
+
+h2 + p {
+  color: var(--lilas);
+  font-size: 14px;
 }
 
 label {
@@ -132,7 +153,7 @@ input:focus, select:focus {
 /* LINHA COM DOIS CAMPOS NO FORM */
 .linha-campo-duplo {
   display: flex;
-  gap: 16px; 
+  gap: 30px; 
   width: 100%;
 }
 
@@ -140,6 +161,18 @@ input:focus, select:focus {
   flex: 1;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.linha-campo-duplo .campo + .campo::before {
+  content: "";
+  position: absolute;
+  left: -15px;  /* em função do gap linha campo duplo*/
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background-color: var(--lilas);
+  opacity: 0.5;
 }
 
 /* FIELDSET  - OPÇÕES*/
@@ -271,12 +304,9 @@ input.tocado:invalid {
   border-color: var(--vermelho);
 }
 
-
 input.tocado:valid {
   border-color: var(--azul);
 }
-
-
 
 /* FOOTER */
 .footer {
@@ -322,6 +352,19 @@ input.tocado:valid {
 
 .footer-bloco a:hover {
   text-decoration: underline;
+}
+
+.footer-bloco h3::before {
+  content: "💡 ";
+  color: var(--amarelo);
+}
+
+.footer-container > .footer-bloco:nth-child(2) h3::before {
+  content: "📍 ";
+}
+
+.footer-container > .footer-bloco:nth-child(3) h3::before {
+  content: "💳 ";
 }
 
 /* COPYRIGHT */
