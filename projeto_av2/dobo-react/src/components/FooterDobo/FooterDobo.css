@@ -1,0 +1,72 @@
+/* FOOTER */
+.footer {
+  background-color: var(--roxo);
+  color: var(--cinza-claro);
+  padding: 32px 16px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-bloco {
+  font-size: 14px;
+}
+
+.footer-bloco h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 12px;
+  color: var(--amarelo);
+}
+
+.footer-bloco ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-bloco ul li{
+  margin-bottom: 6px;
+  margin-right: 4px;
+}
+
+.footer-bloco a {
+  color: var(--cinza-claro);
+  text-decoration: none;
+}
+
+.footer-bloco a:hover {
+  text-decoration: underline;
+}
+
+.footer-bloco h3::before {
+  content: "💡 ";
+  color: var(--amarelo);
+}
+
+.footer-container > .footer-bloco:nth-child(2) h3::before {
+  content: "📍 ";
+}
+
+.footer-container > .footer-bloco:nth-child(3) h3::before {
+  content: "💳 ";
+}
+
+/* COPYRIGHT */
+.footer-copyrights {
+  text-align: center;
+  padding-top: 24px;
+  color: var(--cinza-claro);
+}
+
+.footer-copyrights p {
+  font-size: 12px;
+  color: var(--cinza-claro);
+  letter-spacing: 0.3px;
+
+}
