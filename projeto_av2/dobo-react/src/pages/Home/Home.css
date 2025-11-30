@@ -1,21 +1,21 @@
 /* Remove limitações herdadas*/
-main.home-main {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+/* MAIN DA HOME */
+.home-main {
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
+  overflow-x: hidden;
   display: block;
-  width: 100vw;
 }
 
-/* Todas as seções da home ocupam 100% da tela */
+/* Cada seção agora se comporta naturalmente e não ocupa 90vh obrigatórios */
 .home-main section {
   width: 100%;
-  margin: 0;
   padding: 60px 60px;
+  margin: 0 auto;
   box-sizing: border-box;
   overflow-x: hidden;
-  min-height: 90vh; 
-  width: 100vw;
-
+  min-height: 100vh; 
 }
 
 /* HERO / APRESENTAÇÃO */

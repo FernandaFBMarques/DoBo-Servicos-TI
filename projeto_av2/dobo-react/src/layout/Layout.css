@@ -1,0 +1,19 @@
+
+.layout-wrapper {
+    min-height: 100vh;     
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layout-wrapper main {
+    flex: 1;  
+  }
+  
+  .layout-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  
+  

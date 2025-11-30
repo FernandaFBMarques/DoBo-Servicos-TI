@@ -1,0 +1,31 @@
+ /* FORMULÁRIO DE NOVA SOLICITAÇÃO */
+ .nova-solicitacao {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .nova-solicitacao form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nova-solicitacao input[readonly] {
+    background-color: var(--cinza-claro);
+    cursor: not-allowed;
+    color: var(--roxo);
+    font-weight: 600;
+  }
+  
+  .nova-solicitacao select {
+    background-color: white;
+  }
+  
+  .nova-solicitacao .campo label {
+    color: var(--roxo);
+    font-weight: 600;
+  }

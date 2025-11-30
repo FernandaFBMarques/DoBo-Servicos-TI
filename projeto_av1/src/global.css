@@ -114,11 +114,6 @@ h2 {
   text-align: center;
 }
 
-h2 + p {
-  color: var(--lilas);
-  font-size: 14px;
-}
-
 label {
   display: block;
   margin-bottom: 6px;

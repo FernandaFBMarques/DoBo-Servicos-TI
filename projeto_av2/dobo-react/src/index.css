@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 html, body {
   width: 100%;
   height: 100%;
@@ -14,7 +21,8 @@ html, body {
 }
 
 /*DESIGN TOKENS */
-  :root {
+
+:root {
   --azul: #56D0E9;
   --amarelo: #F8C48B;
   --lilas: #A79BC1;
@@ -39,7 +47,7 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* LINKS */

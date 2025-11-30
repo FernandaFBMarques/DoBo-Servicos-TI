@@ -12,13 +12,6 @@
     position: relative;
   }
   
-  .menu-links > .link-header:nth-child(odd) {
-    color: var(--cinza-claro);
-  }
-  .menu-links > .link-header:nth-child(even) {
-    color: var(--amarelo);
-  }
-  
   .logo {
     height: 50px;
     width: auto;
@@ -40,19 +33,29 @@
     text-decoration: none;
     font-weight: 400;
     transition: color 0.3s ease;
+    width: auto;
+    white-space: nowrap; 
   }
   
   .link-header:hover {
     color: var(--amarelo);
   }
-  
-  .link-header i {
-    font-size: 18px;
-    transition: color 0.3s ease, transform 0.2s ease;
+
+  .logout-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: var(--cinza-claro);
+    font-size: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .link-header:hover i {
+  .logout-btn:hover {
     color: var(--amarelo);
     transform: scale(1.1);
+    background-color: transparent;
   }
-  

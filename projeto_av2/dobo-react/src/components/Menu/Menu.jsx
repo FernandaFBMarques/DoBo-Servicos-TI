@@ -1,16 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Menu.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 export default function Menu() {
-  const [logado, setLogado] = useState(() => {
-    return localStorage.getItem("usuarioLogado") === "true";
-  });
+  const navigate = useNavigate()
+
+  const location = useLocation();
+
+  const [logado, setLogado] = useState(
+    localStorage.getItem("usuarioLogado") === "true"
+  );
+
+  useEffect(() => {
+    const novoValor = localStorage.getItem("usuarioLogado") === "true";
+    
+    setLogado((valorAtual) => {
+      if (valorAtual !== novoValor) {
+        return novoValor;
+      }
+      return valorAtual; // não dispara re-render
+    });
+  }, [location.pathname]);
+  
 
   function logout() {
     localStorage.removeItem("usuarioLogado");
+    localStorage.removeItem("usuario");
+
     setLogado(false);
-    window.location.href = "/";
+
+    alert("Logout realizado com sucesso! 🐾");
+
+    navigate("/");
   }
 
   return (
@@ -33,9 +56,10 @@ export default function Menu() {
 
         {logado && (
           <>
-            <Link to="/carrinho" className="link-header">Serviços de TI</Link>
-            <button className="link-header logout-btn" onClick={logout}>
-              <i className="fa-solid fa-right-from-bracket"></i>
+            <Link to="/servico" className="link-header">Serviços de TI</Link>
+            <Link to="/carrinho" className="link-header">Carrinho</Link>
+            <button className="logout-btn" onClick={logout}>
+              <FontAwesomeIcon icon={faRightFromBracket}/>
             </button>
           </>
         )}

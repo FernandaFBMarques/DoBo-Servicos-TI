@@ -161,10 +161,6 @@ import {
     }
   
     if (valido) {
-			limparErro(senhaInput)
-			limparErro(emailInput)
-			limparErro(confirmaSenha)
-			limparErro()
 			setTimeout(() => {
 					alert("Cadastro realizado com sucesso! 🐾 🐾");
 					window.location.href = "../login/login.html";

@@ -1,0 +1,214 @@
+/* FORMULÁRIO */
+.form-container {
+    background-color: white;
+    padding: 45px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 40px;
+  }
+  
+  .form-container h2::before {
+    content: "🐾 ";
+    color: var(--amarelo);
+  }
+  .form-container h2::after {
+    content: " 🐶";
+    color: var(--amarelo);
+  }
+  
+  h2 {
+    color: var(--roxo);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 34px;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--roxo);
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--lilas);
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: var(--amarelo);
+    box-shadow: 0 0 4px var(--amarelo);
+  }
+  
+  /* INSTRUÇÕES DA SENHA */
+  .instrucoes-senha {
+    background-color: var(--amarelo);
+    color: var(--cinza-escuro);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  
+  /* LINHA COM DOIS CAMPOS NO FORM */
+  .linha-campo-duplo {
+    display: flex;
+    gap: 30px; 
+    width: 100%;
+  }
+  
+  .linha-campo-duplo .campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .linha-campo-duplo .campo + .campo::before {
+    content: "";
+    position: absolute;
+    left: -15px;  /* em função do gap linha campo duplo*/
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background-color: var(--lilas);
+    opacity: 0.5;
+  }
+  
+  /* FIELDSET  - OPÇÕES*/
+  .estado-civil {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 1px solid var(--lilas);
+    border-radius: 6px;
+    padding: 12px;
+    justify-content: space-around;
+    margin-bottom: 16px;
+  }
+  
+  .opcao-estado {
+    border: 1px solid var(--lilas);
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center; 
+    gap: 6px;
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--cinza-escuro);
+  }
+  
+  /* alinhar o radio */
+  .opcao-estado input[type="radio"] {
+    accent-color: var(--roxo);
+    margin: 0;
+    vertical-align: middle;
+    position: relative;
+    top: -1px; /* ajusta finamente a bolinha */
+  }
+  
+  .opcao-estado:hover {
+    background-color: var(--amarelo);
+  }
+  
+  .opcao-estado input[type="radio"] {
+    accent-color: var(--roxo); /* cor da bolinha */
+  }
+  
+  legend {
+    color: var(--roxo);
+    font-weight: bold;
+  }
+  
+  label input[type="radio"] {
+    margin-right: 6px;
+  }
+  
+  /* BOTÃO */
+  button {
+    background-color: var(--azul);
+    color: var(--cinza-claro);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  button:hover {
+    background-color: var(--azul-medio);
+  }
+  
+  /*BOTÕES LINK NO FORMS*/
+  .acoes-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  /* Botões com aparência de link em recuperar senha e limpar*/
+  .btn-link {
+    background: none;
+    border: none;
+    color: var(--roxo);
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  .btn-link:hover {
+    color: var(--amarelo);
+    text-decoration: underline;
+  }
+  
+  .btn-link,
+  .btn-link:hover {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  .btn-limpar {
+    text-align: left;
+  }
+  
+  .btn-recuperar,  .btn-login , .btn-home{
+    text-align: right;
+  }
+  
+  /*MENSAGEM DE ERROS DOS INPUTS*/
+  .campo{
+    margin-bottom: 16px;
+  }
+  
+  .campo .erro {
+    font-size: 13px;
+    color: var(--vermelho);
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input.tocado:invalid {
+    border-color: var(--vermelho);
+  }
+  
+  input.tocado:valid {
+    border-color: var(--azul);
+  }
+  
